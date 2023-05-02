@@ -12,14 +12,14 @@
         </button>
     </div>
     <div class="locandine">
-        
+
         @foreach ($comics as $item)
         <div class="prova">
-        <img src="{{ $item['thumb'] }}" alt="Immagine">
-        <h3>{{ $item['title'] }}</h3>
+            <img src="{{ $item['thumb'] }}" alt="Immagine">
+            <h3>{{ $item['title'] }}</h3>
         </div>
         @endforeach
-        
+
     </div>
     <div class="btn-bottom">
         <button>
@@ -27,6 +27,4 @@
         </button>
     </div>
 </section>
-
-
 @endsection
