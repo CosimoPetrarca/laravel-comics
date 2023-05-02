@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    img {
+        padding: 10px 0;
+        width: 80%;
+    }
+
+    .lista ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .lista ul li {
+        padding: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #464646;
+        font-size: 15px;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: #0282f9;
+        border-bottom: 3px solid #0282f9;
+    }
+}
