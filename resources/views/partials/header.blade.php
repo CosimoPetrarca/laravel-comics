@@ -5,7 +5,7 @@
         </div>
         <div class="lista">
             <ul>
-                @foreach ($links as $link)
+                @foreach ($navLinks as $link)
                 <li><strong><a href="#">{{ $link }}</a></strong></li>
                 @endforeach
             </ul>
