@@ -19,7 +19,6 @@ Route::get('/', function () {
     $data = [
         'navLinks' => ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'],
         'comics' => config('comics'),
-        'sites' => ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa'],
     ];
 
     return view('home', $data);
