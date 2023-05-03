@@ -33,14 +33,23 @@
 <div class="ms-info">
     <div class="container">
      <div class="row align-items-start pt-4">
-      <div class="col-6">
+      <div class="col-6 talent">
         <h4>Talent</h4>
-        <p></p>
-        <p></p>
+        <p class="artist-list">Art By:
+            @foreach ($comic['artists'] as $artist)
+            <span>{{$artist}}</span>
+            @endforeach
+        </p>
+            
+        <p class="artist-list">Writen By:
+            @foreach ($comic['writers'] as $writer)
+            <span>{{$writer}}</span>
+            @endforeach
+        </p>
       </div>
-      <div class="col-6">
+      <div class="col-6 specs">
         <h4>Specs</h4>
-        <p>Series: {{ $comic['type'] }}</p>
+        <p class="artist-list">Series: <span>{{ $comic['type'] }}</span></p>
         <p>U.S. Price: {{ $comic['price'] }}</p>
         <p>On Sale Date: {{ $comic['sale_date'] }}</p>
       </div>

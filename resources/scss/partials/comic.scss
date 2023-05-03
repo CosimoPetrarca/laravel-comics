@@ -23,6 +23,7 @@
 
 .adv {
     padding-left: 40px;
+    padding-top: 50px;
 }
 
 .adv img{
@@ -35,4 +36,21 @@
 
 .ms-info{
     background-color: #f6f6f6;
+    border: 1px solid lightgrey;
+    padding-bottom: 100px;
+}
+
+.talent h4, .specs h4{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 30px;
+}
+
+.talent p, .specs p{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+
+.artist-list span {
+    color: #0282f9;
 }
