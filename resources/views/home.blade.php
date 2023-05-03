@@ -4,7 +4,6 @@
 <div class="jumbo">
 </div>
 
-
 <section>
     <div class="btn-top">
         <button>
@@ -12,14 +11,14 @@
         </button>
     </div>
     <div class="locandine">
-
-        @foreach ($comics as $item)
+        @foreach ($comics as $index => $item)
         <div class="prova">
-            <img src="{{ $item['thumb'] }}" alt="Immagine">
-            <h3>{{ $item['title'] }}</h3>
+            <a href="{{ url('/comic/'.$index) }}">
+                <img src="{{ $item['thumb'] }}" alt="Immagine">
+                <h3>{{ $item['title'] }}</h3>
+            </a>
         </div>
         @endforeach
-
     </div>
     <div class="btn-bottom">
         <button>
